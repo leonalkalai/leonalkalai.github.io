@@ -1,238 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Under Construction</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leon Kountouras — Corporate Business Card</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-        .background-animation {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 0;
-        }
+<style>
+:root {
+  --purple: #3A0CA3;
+  --blue: #4361EE;
+  --cyan: #4CC9F0;
+  --emerald: #00C896;
+  --text-light: #E0E9FF;
+  --text-muted: #BFD5FF;
+}
 
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            animation: float 15s infinite ease-in-out;
-        }
+* { box-sizing: border-box; margin:0; padding:0; }
 
-        .circle:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            left: 10%;
-            top: 20%;
-            animation-delay: 0s;
-        }
+body {
+  background: #fff;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;  /* remove horizontal scroll */
+  overflow-y: hidden;  /* remove vertical scroll */
+  margin: 0;
+  padding: 0;
+}
 
-        .circle:nth-child(2) {
-            width: 120px;
-            height: 120px;
-            right: 15%;
-            top: 40%;
-            animation-delay: 2s;
-        }
+/* Info boxes must stay inside viewport */
+.info-box {
+  position: absolute;
+  max-width: 25vw;
+  word-wrap: break-word;
+  left: clamp(0%, 0%, 95%); /* prevent overflow */
+  top: clamp(0%, 0%, 95%);
+}
 
-        .circle:nth-child(3) {
-            width: 60px;
-            height: 60px;
-            left: 20%;
-            bottom: 30%;
-            animation-delay: 4s;
-        }
+/* ------------------ Watermark ------------------ */
+body::before {
+  content: "Custom Websites • UI/UX Design • Mobile Apps • Performance Optimized • Secure & Reliable";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(67, 97, 238, 0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  animation: watermarkPulse 6s infinite alternate ease-in-out;
+  max-width: 90vw;
+  overflow-wrap: break-word;
+  max-width: 90vw;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
 
-        .circle:nth-child(4) {
-            width: 100px;
-            height: 100px;
-            right: 25%;
-            bottom: 20%;
-            animation-delay: 6s;
-        }
+/* ------------------ Floating Info Boxes ------------------ */
+.info-box {
+  position: absolute;
+  background: rgba(67,97,238,0.1);
+  color: var(--purple);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: clamp(0.75rem,1.2vw,1rem);
+  text-align: center;
+  min-width: 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  animation: fadeInUp 1.5s forwards;
+  z-index: 0;
+}
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 0.7;
-            }
-            50% {
-                transform: translateY(-30px) rotate(180deg);
-                opacity: 1;
-            }
-        }
+/* ------------------ Card ------------------ */
+.card {
+  width: 80%;
+  max-width: 420px;
+  aspect-ratio: 1.75 / 1;
+  perspective: 1200px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.3s;
+}
 
-        .container {
-            text-align: center;
-            color: white;
-            z-index: 1;
-            position: relative;
-            padding: 20px;
-            max-width: 600px;
-        }
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(0.4,0.2,0.2,1);
+  border-radius: 18px;
+}
 
-        .icon-container {
-            margin-bottom: 30px;
-            animation: bounce 2s infinite;
-        }
+.card.is-flipped .card-inner { transform: rotateY(180deg); }
 
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
+.card-face {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(315deg, var(--cyan), var(--blue), var(--purple));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5% 8%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
 
-        .construction-icon {
-            font-size: 80px;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
-        }
+/* ------------------ Decorative Boxes ------------------ */
+.decor-box { position: absolute; border-radius: 3px; opacity: 0.35; z-index: 0; }
+.decor-box.purple { background: var(--purple); }
+.decor-box.blue { background: var(--blue); }
+.decor-box.cyan { background: var(--cyan); }
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            animation: fadeInDown 1s ease-out;
-        }
+.b1 { width: 18px; height: 18px; top: 12%; left: 10%; transform: rotate(15deg); }
+.b2 { width: 12px; height: 12px; top: 70%; left: 15%; transform: rotate(45deg); }
+.b3 { width: 14px; height: 14px; top: 30%; right: 8%; transform: rotate(-25deg); }
+.b4 { width: 10px; height: 10px; bottom: 10%; right: 12%; transform: rotate(60deg); }
+.b5 { width: 20px; height: 20px; bottom: 15%; left: 45%; transform: rotate(-40deg); }
+.b6 { width: 8px; height: 8px; top: 45%; right: 35%; transform: rotate(15deg); }
 
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.card-front h2 { margin:0; font-size: clamp(1.3rem,3vw,1.6rem); font-weight:700; z-index:1; }
+.card-front h4 { margin:6px 0 14px 0; font-size: clamp(0.9rem,2vw,1rem); font-weight:500; color: var(--text-light); z-index:1; }
+.divider { width:50px; height:3px; background: var(--emerald); border-radius:3px; margin:12px 0; z-index:1; }
+.details { font-size: clamp(0.8rem,2vw,0.9rem); line-height:1.6; color: var(--text-muted); z-index:1; }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            opacity: 0.9;
-            animation: fadeIn 1.5s ease-out;
-        }
+/* ------------------ Card Back ------------------ */
+.card-back {
+  transform: rotateY(180deg);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 5% 10%;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+.card-back .info {
+  font-size: clamp(1.1rem,3vw,1.4rem);
+  display: flex; align-items: center; gap: 12px; margin:10px 0;
+  color: var(--text-light); text-align:left;
+}
+.card-back .info i { color: var(--emerald); font-size:1.2rem; width:22px; text-align:center; }
 
-        .progress-bar {
-            width: 100%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
+.card-back .socials { margin-top:20px; display:flex; gap:20px; justify-content:flex-start; }
+.card-back .socials a { color: var(--emerald); font-size:1.8rem; transition:all 0.3s ease; text-decoration:none; }
+.card-back .socials a:hover { color:#fff; transform:translateY(-3px); }
 
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #fff, #f0f0f0);
-            border-radius: 10px;
-            animation: progress 2s ease-out forwards;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
+.card-back .decor-box { opacity:0.25; z-index:0; }
 
-        @keyframes progress {
-            from {
-                width: 0%;
-            }
-            to {
-                width: 65%;
-            }
-        }
+/* ------------------ Triangles ------------------ */
+.triangle {
+  position: absolute; width:20px; height:20px; background: var(--cyan);
+  clip-path: polygon(50% 0%,0% 100%,100% 100%); opacity:0.35; z-index:0;
+  transition: all 0.3s ease;
+  animation: triangleFloat 4s infinite alternate ease-in-out;
+}
+/* Triangles constrained */
+.triangle {
+  position: absolute;
+  max-width: 5vw;
+  max-height: 5vw;
+  left: clamp(0%, 0%, 95%);
+  top: clamp(0%, 0%, 95%);
+}
+.triangle:hover { transform: scale(1.2); opacity:0.6; }
 
-        h2 {
-            animation: fadeInUp 2s ease-out;
-        }
+/* ------------------ Animations ------------------ */
+@keyframes watermarkPulse {
+  0% { opacity: 0.04; transform: translate(-50%, -50%) rotate(-25deg) scale(1); }
+  50% { opacity: 0.07; transform: translate(-50%, -50%) rotate(-25deg) scale(1.05); }
+  100% { opacity: 0.04; transform: translate(-50%, -50%) rotate(-25deg) scale(1); }
+}
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+@keyframes triangleFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
+@keyframes fadeInUp {
+  0% { opacity:0; transform: translateY(20px); }
+  100% { opacity:1; transform: translateY(0); }
+}
 
-            .construction-icon {
-                font-size: 60px;
-            }
-
-            .email-form {
-                flex-direction: column;
-            }
-
-            button {
-                width: 100%;
-            }
-            .email-form {
-                flex-direction: column;
-            }
-
-            button {
-                width: 100%;
-            }
-        }
-    </style>
+/* ------------------ Responsive ------------------ */
+@media (max-width: 768px) {
+  .card { width: 90%; }
+  .info-box { max-width: 35vw; font-size:0.85rem; padding:6px 10px; }
+  .triangle { width:15px; height:15px; }
+  body::before { font-size:2rem; }
+}
+@media (max-width: 480px) {
+  .card { width: 95%; aspect-ratio:1.7/1; }
+  .info-box { max-width: 45vw; font-size:0.75rem; padding:5px 8px; }
+  .triangle { width:12px; height:12px; }
+  body::before { font-size:1.5rem; }
+}
+</style>
 </head>
 <body>
-    <div class="background-animation">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+
+<!-- Randomly scattered info boxes -->
+<div class="info-box" style="top:5%; left:10%;">Custom Websites</div>
+<div class="info-box" style="top:15%; left:75%;">UI/UX Design</div>
+<div class="info-box" style="top:35%; left:25%;">Mobile Apps</div>
+<div class="info-box" style="top:50%; left:60%;">Performance Optimized</div>
+<div class="info-box" style="top:70%; left:15%;">Secure & Reliable</div>
+<div class="info-box" style="top:80%; left:70%;">SEO & Analytics</div>
+<div class="info-box" style="top:55%; left:40%;">24/7 Support</div>
+<div class="info-box" style="top:25%; left:50%;">Scalable Solutions</div>
+
+<!-- Triangles -->
+<div class="triangle" style="top:10%; left:5%;"></div>
+<div class="triangle" style="top:20%; right:5%;"></div>
+<div class="triangle" style="bottom:15%; left:10%;"></div>
+<div class="triangle" style="bottom:20%; right:10%;"></div>
+<div class="triangle" style="top:50%; left:2%;"></div>
+<div class="triangle" style="top:50%; right:2%;"></div>
+
+<!-- Main Card -->
+<div class="card" id="businessCard">
+  <div class="card-inner">
+
+    <!-- FRONT -->
+    <div class="card-face card-front">
+      <div class="decor-box purple b1"></div>
+      <div class="decor-box blue b2"></div>
+      <div class="decor-box cyan b3"></div>
+      <div class="decor-box purple b4"></div>
+      <div class="decor-box blue b5"></div>
+      <div class="decor-box cyan b6"></div>
+
+      <h2>Leon Kountouras</h2>
+      <h4>Website & Application Creator</h4>
+      <div class="divider"></div>
+      <div class="details">
+        • Custom Website Development<br>
+        • UI/UX Focused Applications<br>
+        • Performance & Security Optimization
+      </div>
     </div>
 
-    <div class="container">
-        <div class="icon-container">
-            <div class="construction-icon">🚧</div>
-        </div>
-        
-        <h1>Under Construction</h1>
-        
-        <h2 style="font-size: 1.8em; margin-bottom: 20px; font-weight: 400; opacity: 0.95;">Leon Kountouras</h2>
-        
-        <p>Something amazing is being built here. Stay tuned!</p>
-        
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
-        </div>
+    <!-- BACK -->
+    <div class="card-face card-back">
+      <div class="decor-box purple b1"></div>
+      <div class="decor-box blue b2"></div>
+      <div class="decor-box cyan b3"></div>
+      <div class="decor-box purple b4"></div>
+      <div class="decor-box blue b5"></div>
+      <div class="decor-box cyan b6"></div>
+
+      <div class="info"><i class="fas fa-envelope"></i> koundouras@gmail.com</div>
+      <div class="info"><i class="fas fa-phone"></i> +30694520197</div>
+      <div class="socials">
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
+
+  </div>
+</div>
+
+<script>
+const card = document.getElementById('businessCard');
+card.addEventListener('click', () => card.classList.toggle('is-flipped'));
+</script>
 </body>
 </html>
