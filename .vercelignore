@@ -1,0 +1,88 @@
+# =========================
+# Generator / workbench files
+# Used only locally to generate the Next.js app
+# =========================
+init-project.js
+init-project-webflow-compatible.js
+init-project-webflow-compatible copy.js
+setup-ml-screenshot-system.mjs
+setup-ml-screenshot-system copy.mjs
+fix-ml-style.js
+
+# =========================
+# Source templates used only by generators
+# =========================
+demo.html
+urls.txt
+creto-header-source.html
+creto-urls.txt
+firmo-about.html
+spaceball.html
+Leon_Kountouras_Timeline_CV.html
+
+# =========================
+# PDFs / ZIPs / source archives
+# =========================
+*.pdf
+*.zip
+
+# =========================
+# External demo/source folders
+# =========================
+progress/
+three-js-shockwave-shaderpass-ii/
+
+# =========================
+# Local AI/editor/workspace files
+# =========================
+agent.md
+cline_mcp_settings.json
+my-ai-website.code-workspace
+
+# =========================
+# Local generated helper files
+# =========================
+project-tree.txt
+ml-screenshots-tree.txt
+git-status.txt
+
+# =========================
+# Root source assets copied into /public
+# Keep production copies inside public/
+# =========================
+/profile.png
+/leon-gradient-text.png
+/leonkountouras-logo.png
+/leonkountouras-logo-colored.png
+/leon-minimal-logo.svg
+/line-grid.svg
+
+# =========================
+# ML private/runtime state
+# =========================
+data/ml/auth-secrets.json
+data/ml/auth-states/
+data/ml/selection-snapshots/
+data/ml/worker.log
+data/ml/jobs.json
+data/ml/rankings.json
+data/ml/preferences.json
+data/ml/feedback-model.json
+
+# =========================
+# Screenshot temporary candidates
+# Keep only final cover.webp / slide-*.webp
+# =========================
+public/ml-screenshots/**/candidates-*/
+public/ml-screenshots/**/raw/
+public/ml-screenshots/**/temp/
+public/ml-screenshots/**/tmp/
+public/ml-screenshots/**/rejected/
+
+# =========================
+# OS / editor / logs
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+.vscode/

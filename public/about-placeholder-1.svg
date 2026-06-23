@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f3eee7"/>
+  <rect x="80" y="80" width="1040" height="740" rx="42" fill="#ffffff" opacity="0.72"/>
+  <circle cx="600" cy="360" r="110" fill="#111111" opacity="0.08"/>
+  <rect x="380" y="520" width="440" height="26" rx="13" fill="#111111" opacity="0.12"/>
+  <rect x="450" y="575" width="300" height="20" rx="10" fill="#111111" opacity="0.08"/>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111111" opacity="0.36">Selected Work</text>
+</svg>

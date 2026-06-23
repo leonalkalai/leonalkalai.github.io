@@ -1,0 +1,566 @@
+[
+  {
+    "slug": "hotels-finder",
+    "title": "Hotels Finder",
+    "url": "https://hotelsfinder.great-site.net",
+    "prompt": "professional hotel booking website screenshot with search, rooms, reservations and accommodation UI",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://hotelsfinder.great-site.net"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "https://hotelsfinder.great-site.net/login.php",
+      "loginLinkSelector": "a#Login, a[href*='login'], a:has-text('Login'), a:has-text('Σύνδεση')",
+      "username": "demo@demo.gr",
+      "password": "demo",
+      "verificationCode": "",
+      "usernameSelector": "input[name='email'], input[type='email'], input[name='username'], input[type='text']",
+      "passwordSelector": "input[name='password'], input[type='password']",
+      "submitSelector": "button[type='submit'], input[type='submit'], button:has-text('Login'), button:has-text('Sign in'), button:has-text('Σύνδεση')",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "hotels-finder-room-page",
+    "title": "Hotels Finder Room Page",
+    "url": "https://hotelsfinder.great-site.net/room-page.php?room_id=2&check_in_date=&check_out_date=&i=1",
+    "prompt": "hotel room details booking page screenshot with room photos, prices, dates and reservation UI",
+    "auth": {
+      "type": "form",
+      "loginUrl": "https://hotelsfinder.great-site.net/login.php",
+      "loginLinkSelector": "a#Login, a[href*='login'], a:has-text('Login'), a:has-text('Σύνδεση')",
+      "username": "demo@demo.gr",
+      "password": "demo",
+      "usernameSelector": "input[name='email'], input[type='email'], input[name='username'], input[type='text']",
+      "passwordSelector": "input[name='password'], input[type='password']",
+      "submitSelector": "button[type='submit'], input[type='submit'], button:has-text('Login'), button:has-text('Sign in'), button:has-text('Σύνδεση')",
+      "expectedUrlIncludes": "room-page.php",
+      "expectedContentIncludes": "room",
+      "successUrlIncludes": "hotelsfinder.great-site.net",
+      "verificationCode": ""
+    },
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Room page",
+        "url": "https://hotelsfinder.great-site.net/room-page.php?room_id=2&check_in_date=&check_out_date=&i=1"
+      }
+    ],
+    "roleContext": "",
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "next-js-finance-app",
+    "title": "Next.js Finance App",
+    "url": "https://nextjs-finance-app-theta.vercel.app/",
+    "prompt": "modern finance dashboard screenshot with charts, invoices, customers, tables and analytics",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://nextjs-finance-app-theta.vercel.app/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "personal-portfolio",
+    "title": "Personal Portfolio",
+    "url": "https://leonalkalai.github.io/",
+    "prompt": "modern developer portfolio website screenshot with projects, profile and web design",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://leonalkalai.github.io/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "phidiashouse-apartments",
+    "title": "Phidiashouse Apartments",
+    "url": "https://phidiashouse.com/",
+    "prompt": "apartment rental hospitality website screenshot with rooms, booking, travel and accommodation design",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://phidiashouse.com/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "exsell-digital-marketplace",
+    "title": "Exsell Digital Marketplace",
+    "url": "https://exsell-digital-marketplace-9hm9.vercel.app/",
+    "prompt": "digital marketplace web app screenshot with products, listings, cards and ecommerce interface",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://exsell-digital-marketplace-9hm9.vercel.app/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": false,
+    "useForMl": true
+  },
+  {
+    "slug": "psyllias-giorgos-gypsosanides",
+    "title": "Psyllias Giorgos Gypsosanides",
+    "url": "https://psyllias-giorgos-gypsosanides.vercel.app/",
+    "prompt": "professional business services website screenshot with construction, gypsum, services and contact sections",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://psyllias-giorgos-gypsosanides.vercel.app/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "osiris-contact-learning",
+    "title": "Osiris Contact Learning",
+    "url": "https://osiris-contact-learning-rps3.vercel.app/",
+    "prompt": "online learning platform screenshot with courses, lessons, dashboard and education UI",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://osiris-contact-learning-rps3.vercel.app/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "hotels-finder-elementfx",
+    "title": "Hotels Finder ElementFX",
+    "url": "https://hotelsfinder.elementfx.com",
+    "prompt": "hotel booking website screenshot with rooms, search and accommodation interface",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://hotelsfinder.elementfx.com"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "menuhelp-app",
+    "title": "MenuHelp App",
+    "url": "https://chingu-voyages.github.io/V53-tier2-team-23/",
+    "prompt": "menu planning web application screenshot with dishes, meals, scheduling and food UI",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://chingu-voyages.github.io/V53-tier2-team-23/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "bookaholics",
+    "title": "Bookaholics",
+    "url": "https://in-tech-gration-cohort-0x02.github.io/Bookaholics/",
+    "prompt": "book discovery web app screenshot with book covers, search, reading and library UI",
+    "personal": true,
+    "ownership": "personal",
+    "company": "",
+    "companyUrl": "",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://in-tech-gration-cohort-0x02.github.io/Bookaholics/"
+      }
+    ],
+    "roleContext": "",
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "create-website-gr",
+    "title": "create-website.gr",
+    "url": "https://create-website.gr/",
+    "prompt": "web agency business website screenshot with services, portfolio and professional landing page design",
+    "personal": false,
+    "ownership": "employer-company",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Company where I worked as Full-Stack / WordPress Developer. This entry is employment context, not a personal project.",
+    "displayInTraining": false,
+    "useForMl": false,
+    "sourceUrls": [],
+    "auth": {
+      "type": "none"
+    },
+    "screenshotMin": 0,
+    "screenshotMax": 0
+  },
+  {
+    "slug": "argynet-support-hosting",
+    "title": "Argynet Support Hosting",
+    "url": "https://argynet.support-hosting.gr/",
+    "prompt": "hosting support business website screenshot with hosting services, support, technology and professional UI",
+    "personal": false,
+    "ownership": "employer",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Contributed to this project as part of my Full-Stack / WordPress Developer role at create-website.",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://argynet.support-hosting.gr/"
+      }
+    ],
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "body-move",
+    "title": "Body Move",
+    "url": "https://body-move.vercel.app/",
+    "prompt": "fitness movement web app screenshot with exercise, wellness, training and modern UI",
+    "personal": false,
+    "ownership": "employer",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Contributed to this project as part of my Full-Stack / WordPress Developer role at create-website.",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://body-move.vercel.app/"
+      }
+    ],
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "tesma",
+    "title": "Tesma",
+    "url": "https://tesma.create-site.gr/",
+    "prompt": "industrial business website screenshot with pumps, engineering products, technical data and services",
+    "personal": false,
+    "ownership": "employer",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Contributed to this project as part of my Full-Stack / WordPress Developer role at create-website.",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://tesma.create-site.gr/"
+      }
+    ],
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "zafiropoulos-tours",
+    "title": "Zafiropoulos Tours",
+    "url": "https://zafiropoulostours.gr/",
+    "prompt": "tourism travel website screenshot with tours, destinations, booking and travel agency design",
+    "personal": false,
+    "ownership": "employer",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Contributed to this project as part of my Full-Stack / WordPress Developer role at create-website.",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://zafiropoulostours.gr/"
+      }
+    ],
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  },
+  {
+    "slug": "mykonos-rent-a-cars",
+    "title": "Mykonos Rent A Cars",
+    "url": "https://mykonosrentacars.com/",
+    "prompt": "car rental website screenshot with vehicles, booking, Mykonos travel and rental UI",
+    "personal": false,
+    "ownership": "employer",
+    "company": "create-website",
+    "companyUrl": "https://create-website.gr/",
+    "roleContext": "Contributed to this project as part of my Full-Stack / WordPress Developer role at create-website.",
+    "sourceUrls": [
+      {
+        "label": "Main page",
+        "url": "https://mykonosrentacars.com/"
+      }
+    ],
+    "auth": {
+      "type": "none",
+      "loginUrl": "",
+      "loginLinkSelector": "",
+      "username": "",
+      "password": "",
+      "verificationCode": "",
+      "usernameSelector": "",
+      "passwordSelector": "",
+      "submitSelector": "",
+      "expectedUrlIncludes": "",
+      "expectedContentIncludes": ""
+    },
+    "screenshotMin": 2,
+    "screenshotMax": 6,
+    "disabled": true,
+    "useForMl": false
+  }
+]
