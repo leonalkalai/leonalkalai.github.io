@@ -1,194 +1,162 @@
 {
-  "bookaholics": {
-    "cover": "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-00-1440x1000-a9d6382f32.webp",
-    "images": [
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-00-1440x1000-a9d6382f32.webp",
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-01-1440x1000-0f18ab8798.webp",
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-02-1440x1000-65ca3371e3.webp",
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-03-1440x1000-212c1057b7.webp",
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-viewport-00-1024x900-da53d58600.webp",
-      "/ml-screenshots/bookaholics/candidates-1781862696420/source-0-section-00-700x1160-e44485e141.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:34.028Z"
-  },
-  "hotels-finder": {
-    "cover": "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-section-00-1440x913-7b7370499d.webp",
-    "images": [
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-section-00-1440x913-7b7370499d.webp",
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-viewport-00-1440x1000-133814798a.webp",
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-viewport-01-1440x1000-bf91ce85aa.webp",
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-viewport-02-1440x1000-b6e6fb8780.webp",
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-viewport-03-1440x1000-4b50fdb556.webp",
-      "/ml-screenshots/hotels-finder/candidates-1781862506957/source-0-section-00-1024x822-cc84ba3d31.webp"
-    ],
-    "updatedAt": "2026-06-20T08:34:45.307Z"
-  },
-  "hotels-finder-room-page": {
-    "cover": "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-section-01-842x400-402d07e6d9.webp",
-    "images": [
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-section-01-842x400-402d07e6d9.webp",
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-viewport-00-1440x1000-375e0074c9.webp",
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-viewport-01-1440x1000-b1fd0cfbbf.webp",
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-section-00-1296x456-f78a5e1ba5.webp",
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-viewport-02-1440x1000-50336acb8c.webp",
-      "/ml-screenshots/hotels-finder-room-page/candidates-1781862528851/source-0-viewport-03-1440x1000-d68d544ff0.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.761Z"
-  },
-  "next-js-finance-app": {
-    "cover": "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-viewport-03-1440x1000-3ad1ada6fc.webp",
-    "images": [
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-viewport-03-1440x1000-3ad1ada6fc.webp",
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-section-00-1280x1554-c71fca56e3.webp",
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-viewport-02-1440x1000-77ffaca14b.webp",
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-section-01-896x1458-5372aba400.webp",
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-viewport-00-1440x1000-4ae89fc68c.webp",
-      "/ml-screenshots/next-js-finance-app/candidates-1781862553966/source-0-viewport-01-1440x1000-f7ebac9359.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.781Z"
-  },
-  "personal-portfolio": {
-    "cover": "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-01-1024x900-59d91b36d5.webp",
-    "images": [
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-01-1024x900-59d91b36d5.webp",
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-00-1024x900-d5093fa7d6.webp",
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-00-1440x1000-c2fe52fe11.webp",
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-01-1440x1000-1f1530ff5b.webp",
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-03-1440x1000-96385507dd.webp",
-      "/ml-screenshots/personal-portfolio/candidates-1781862573380/source-0-viewport-02-1440x1000-554a3794e4.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.828Z"
-  },
-  "phidiashouse-apartments": {
-    "cover": "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-00-1280x692-558e40af84.webp",
-    "images": [
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-00-1280x692-558e40af84.webp",
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-03-1408x1144-f7b60571a9.webp",
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-01-1280x1784-971d2f7d2c.webp",
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-04-1408x1074-2630585840.webp",
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-02-1408x876-081bde4d67.webp",
-      "/ml-screenshots/phidiashouse-apartments/candidates-1781862586515/source-0-section-05-1280x748-0c5fd6d9e6.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.864Z"
-  },
-  "psyllias-giorgos-gypsosanides": {
-    "cover": "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-viewport-00-1440x1000-8b8fc11859.webp",
-    "images": [
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-viewport-00-1440x1000-8b8fc11859.webp",
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-section-00-1440x1118-30ad0f30df.webp",
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-section-02-1440x920-b90e93be9a.webp",
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-section-01-1440x810-85c229e4d5.webp",
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-section-03-1440x459-c9d8385259.webp",
-      "/ml-screenshots/psyllias-giorgos-gypsosanides/candidates-1781862618484/source-0-section-04-1440x482-60d66f86b3.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.892Z"
-  },
-  "osiris-contact-learning": {
-    "cover": "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-01-1280x729-58cb8083fa.webp",
-    "images": [
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-01-1280x729-58cb8083fa.webp",
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-00-1440x921-81a5bd132c.webp",
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-03-1440x1428-ff2f950a45.webp",
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-02-1440x708-6848f5f4b4.webp",
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-04-1440x584-c0f144fa12.webp",
-      "/ml-screenshots/osiris-contact-learning/candidates-1781862631154/source-0-section-05-1440x820-c542fb6410.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.920Z"
-  },
-  "hotels-finder-elementfx": {
-    "cover": "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-00-1440x1000-0c629167f6.webp",
-    "images": [
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-00-1440x1000-0c629167f6.webp",
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-01-1440x1000-59d53b2b23.webp",
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-02-1440x1000-eb5c088136.webp",
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-03-1440x1000-5bd68c6dda.webp",
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-00-1024x900-ef56ef6b32.webp",
-      "/ml-screenshots/hotels-finder-elementfx/candidates-1781862645755/source-0-viewport-01-1024x900-2d45e7d302.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:33.980Z"
-  },
-  "menuhelp-app": {
-    "cover": "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-00-1440x1000-658906a781.webp",
-    "images": [
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-00-1440x1000-658906a781.webp",
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-01-1440x1000-486920c426.webp",
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-02-1440x1000-21d88f4a1b.webp",
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-03-1440x1000-14b9f544d3.webp",
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-00-1024x900-269f7242fe.webp",
-      "/ml-screenshots/menuhelp-app/candidates-1781862681110/source-0-viewport-01-1024x900-57ca4adc30.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:34.011Z"
-  },
   "argynet-support-hosting": {
-    "cover": "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-01-1280x820-6bb8267c90.webp",
+    "cover": "/ml-screenshots/argynet-support-hosting/cover.webp",
     "images": [
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-01-1280x820-6bb8267c90.webp",
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-03-1280x1207-d5b1097c0b.webp",
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-04-1440x794-fab8a93cf2.webp",
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-00-1440x980-4194d3e7b0.webp",
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-05-1440x760-b1dd9e2f47.webp",
-      "/ml-screenshots/argynet-support-hosting/candidates-1781862709844/source-0-section-02-1440x1367-af8b12b100.webp"
+      "/ml-screenshots/argynet-support-hosting/cover.webp",
+      "/ml-screenshots/argynet-support-hosting/slide-1.webp",
+      "/ml-screenshots/argynet-support-hosting/slide-2.webp",
+      "/ml-screenshots/argynet-support-hosting/slide-3.webp"
     ],
-    "updatedAt": "2026-06-19T12:05:34.054Z"
+    "updatedAt": "2026-06-25T09:14:37.704Z"
   },
   "body-move": {
-    "cover": "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-04-1216x648-473550c0c0.webp",
+    "cover": "/ml-screenshots/body-move/cover.webp",
     "images": [
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-04-1216x648-473550c0c0.webp",
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-05-1216x648-334bff134c.webp",
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-03-1440x1000-ba3f8b5e62.webp",
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-02-1248x1360-df54789759.webp",
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-00-1440x1744-d5f156cd5e.webp",
-      "/ml-screenshots/body-move/candidates-1781862721924/source-0-section-01-1280x1616-e3c2212ed7.webp"
+      "/ml-screenshots/body-move/cover.webp",
+      "/ml-screenshots/body-move/slide-1.webp",
+      "/ml-screenshots/body-move/slide-2.webp",
+      "/ml-screenshots/body-move/slide-3.webp"
     ],
-    "updatedAt": "2026-06-19T12:05:34.095Z"
+    "updatedAt": "2026-06-25T09:14:37.706Z"
   },
-  "tesma": {
-    "cover": "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-00-1440x480-dda6797ff3.webp",
+  "bookaholics": {
+    "cover": "/ml-screenshots/bookaholics/cover.webp",
     "images": [
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-00-1440x480-dda6797ff3.webp",
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-05-1440x485-bc0a1e654b.webp",
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-03-1390x680-6198347698.webp",
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-02-1440x740-df74072b27.webp",
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-01-1390x430-641b4ea429.webp",
-      "/ml-screenshots/tesma/candidates-1781862736771/source-0-section-04-1440x800-baaa0158e6.webp"
+      "/ml-screenshots/bookaholics/cover.webp",
+      "/ml-screenshots/bookaholics/slide-1.webp",
+      "/ml-screenshots/bookaholics/slide-2.webp",
+      "/ml-screenshots/bookaholics/slide-3.webp"
     ],
-    "updatedAt": "2026-06-19T12:05:34.133Z"
-  },
-  "zafiropoulos-tours": {
-    "cover": "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-section-00-1024x403-71d9bcd076.webp",
-    "images": [
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-section-00-1024x403-71d9bcd076.webp",
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-viewport-00-1440x1000-4b223240e5.webp",
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-viewport-01-1440x1000-eeed405083.webp",
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-viewport-02-1440x1000-e78366a310.webp",
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-viewport-03-1440x1000-0e0f211e28.webp",
-      "/ml-screenshots/zafiropoulos-tours/candidates-1781862753876/source-0-section-00-1440x708-adf99d770c.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:34.180Z"
-  },
-  "mykonos-rent-a-cars": {
-    "cover": "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-section-00-976x413-5970a9a17e.webp",
-    "images": [
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-section-00-976x413-5970a9a17e.webp",
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-viewport-00-1440x1000-ff35d79545.webp",
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-viewport-02-1440x1000-ab60685799.webp",
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-viewport-03-1440x1000-27b4b0058a.webp",
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-viewport-00-1024x900-f6be58fa0f.webp",
-      "/ml-screenshots/mykonos-rent-a-cars/candidates-1781862773935/source-0-viewport-01-1440x1000-d893259f46.webp"
-    ],
-    "updatedAt": "2026-06-19T12:05:34.225Z"
+    "updatedAt": "2026-06-25T09:14:37.706Z"
   },
   "exsell-digital-marketplace": {
-    "cover": "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-section-00-1280x1280-e8b423378d.webp",
+    "cover": "/ml-screenshots/exsell-digital-marketplace/cover.webp",
     "images": [
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-viewport-00-1024x900-87641b9f7a.webp",
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-viewport-01-1024x900-60a2088af3.webp",
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-viewport-02-1024x900-c44e5d76b2.webp",
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-viewport-03-1024x900-7495d04538.webp",
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-section-00-1280x1280-e8b423378d.webp",
-      "/ml-screenshots/exsell-digital-marketplace/candidates-1782155622903/source-0-section-00-1280x1280-aeffd77db9.webp"
+      "/ml-screenshots/exsell-digital-marketplace/cover.webp",
+      "/ml-screenshots/exsell-digital-marketplace/slide-1.webp",
+      "/ml-screenshots/exsell-digital-marketplace/slide-2.webp",
+      "/ml-screenshots/exsell-digital-marketplace/slide-3.webp"
     ],
-    "updatedAt": "2026-06-22T19:16:21.555Z"
+    "updatedAt": "2026-06-25T09:14:37.707Z"
+  },
+  "hotels-finder": {
+    "cover": "/ml-screenshots/hotels-finder/cover.webp",
+    "images": [
+      "/ml-screenshots/hotels-finder/cover.webp",
+      "/ml-screenshots/hotels-finder/slide-1.webp",
+      "/ml-screenshots/hotels-finder/slide-2.webp",
+      "/ml-screenshots/hotels-finder/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.708Z"
+  },
+  "hotels-finder-elementfx": {
+    "cover": "/ml-screenshots/hotels-finder-elementfx/cover.webp",
+    "images": [
+      "/ml-screenshots/hotels-finder-elementfx/cover.webp",
+      "/ml-screenshots/hotels-finder-elementfx/slide-1.webp",
+      "/ml-screenshots/hotels-finder-elementfx/slide-2.webp",
+      "/ml-screenshots/hotels-finder-elementfx/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.709Z"
+  },
+  "hotels-finder-room-page": {
+    "cover": "/ml-screenshots/hotels-finder-room-page/cover.webp",
+    "images": [
+      "/ml-screenshots/hotels-finder-room-page/cover.webp",
+      "/ml-screenshots/hotels-finder-room-page/slide-1.webp",
+      "/ml-screenshots/hotels-finder-room-page/slide-2.webp",
+      "/ml-screenshots/hotels-finder-room-page/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.709Z"
+  },
+  "menuhelp-app": {
+    "cover": "/ml-screenshots/menuhelp-app/cover.webp",
+    "images": [
+      "/ml-screenshots/menuhelp-app/cover.webp",
+      "/ml-screenshots/menuhelp-app/slide-1.webp",
+      "/ml-screenshots/menuhelp-app/slide-2.webp",
+      "/ml-screenshots/menuhelp-app/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.710Z"
+  },
+  "mykonos-rent-a-cars": {
+    "cover": "/ml-screenshots/mykonos-rent-a-cars/cover.webp",
+    "images": [
+      "/ml-screenshots/mykonos-rent-a-cars/cover.webp",
+      "/ml-screenshots/mykonos-rent-a-cars/slide-1.webp",
+      "/ml-screenshots/mykonos-rent-a-cars/slide-2.webp",
+      "/ml-screenshots/mykonos-rent-a-cars/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.711Z"
+  },
+  "next-js-finance-app": {
+    "cover": "/ml-screenshots/next-js-finance-app/cover.webp",
+    "images": [
+      "/ml-screenshots/next-js-finance-app/cover.webp",
+      "/ml-screenshots/next-js-finance-app/slide-1.webp",
+      "/ml-screenshots/next-js-finance-app/slide-2.webp",
+      "/ml-screenshots/next-js-finance-app/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.711Z"
+  },
+  "osiris-contact-learning": {
+    "cover": "/ml-screenshots/osiris-contact-learning/cover.webp",
+    "images": [
+      "/ml-screenshots/osiris-contact-learning/cover.webp",
+      "/ml-screenshots/osiris-contact-learning/slide-1.webp",
+      "/ml-screenshots/osiris-contact-learning/slide-2.webp",
+      "/ml-screenshots/osiris-contact-learning/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.712Z"
+  },
+  "personal-portfolio": {
+    "cover": "/ml-screenshots/personal-portfolio/cover.webp",
+    "images": [
+      "/ml-screenshots/personal-portfolio/cover.webp",
+      "/ml-screenshots/personal-portfolio/slide-1.webp",
+      "/ml-screenshots/personal-portfolio/slide-2.webp",
+      "/ml-screenshots/personal-portfolio/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.713Z"
+  },
+  "phidiashouse-apartments": {
+    "cover": "/ml-screenshots/phidiashouse-apartments/cover.webp",
+    "images": [
+      "/ml-screenshots/phidiashouse-apartments/cover.webp",
+      "/ml-screenshots/phidiashouse-apartments/slide-1.webp",
+      "/ml-screenshots/phidiashouse-apartments/slide-2.webp",
+      "/ml-screenshots/phidiashouse-apartments/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.713Z"
+  },
+  "psyllias-giorgos-gypsosanides": {
+    "cover": "/ml-screenshots/psyllias-giorgos-gypsosanides/cover.webp",
+    "images": [
+      "/ml-screenshots/psyllias-giorgos-gypsosanides/cover.webp",
+      "/ml-screenshots/psyllias-giorgos-gypsosanides/slide-1.webp",
+      "/ml-screenshots/psyllias-giorgos-gypsosanides/slide-2.webp",
+      "/ml-screenshots/psyllias-giorgos-gypsosanides/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.714Z"
+  },
+  "tesma": {
+    "cover": "/ml-screenshots/tesma/cover.webp",
+    "images": [
+      "/ml-screenshots/tesma/cover.webp",
+      "/ml-screenshots/tesma/slide-1.webp",
+      "/ml-screenshots/tesma/slide-2.webp",
+      "/ml-screenshots/tesma/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.715Z"
+  },
+  "zafiropoulos-tours": {
+    "cover": "/ml-screenshots/zafiropoulos-tours/cover.webp",
+    "images": [
+      "/ml-screenshots/zafiropoulos-tours/cover.webp",
+      "/ml-screenshots/zafiropoulos-tours/slide-1.webp",
+      "/ml-screenshots/zafiropoulos-tours/slide-2.webp",
+      "/ml-screenshots/zafiropoulos-tours/slide-3.webp"
+    ],
+    "updatedAt": "2026-06-25T09:14:37.715Z"
   }
 }

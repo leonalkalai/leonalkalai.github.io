@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prebuild": "node scripts/check-production-assets.cjs"
   },
   "dependencies": {
     "framer-motion": "^12.0.0",
