@@ -6,11 +6,19 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const mlDir = path.join(process.cwd(), "data", "ml");
+const publicDir = path.join(process.cwd(), "public");
 const frontendImagesPath = path.join(mlDir, "frontend-images.json");
 const rankingsPath = path.join(mlDir, "rankings.json");
 const preferencesPath = path.join(mlDir, "preferences.json");
 
 const DEFAULT_MIN_ACCEPTABLE_SCORE = 2.8;
+
+const SELECTED_SCREENSHOT_FILES = [
+  "cover.webp",
+  "slide-1.webp",
+  "slide-2.webp",
+  "slide-3.webp",
+];
 
 type FrontendProjectImages = {
   cover: string | null;
@@ -55,6 +63,12 @@ type PickBestCoverInput = {
   images: string[];
 };
 
+type CreateProductionImagesInput = {
+  projectSlug: string;
+  cover: string | null;
+  images: string[];
+};
+
 function readJson<T>(filePath: string, fallback: T): T {
   try {
     if (!fs.existsSync(filePath)) return fallback;
@@ -71,6 +85,121 @@ function writeFrontendImages(data: Record<string, FrontendProjectImages>) {
     JSON.stringify(data, null, 2) + "\n",
     "utf8",
   );
+}
+
+function normalizePublicPath(publicPath: string) {
+  return publicPath.split(/[?#]/)[0];
+}
+
+function publicPathToFilePath(publicPath: string) {
+  const normalizedPublicPath = normalizePublicPath(publicPath);
+
+  if (!normalizedPublicPath.startsWith("/")) return null;
+
+  const relativePath = decodeURIComponent(normalizedPublicPath).replace(
+    /^\/+/,
+    "",
+  );
+
+  const filePath = path.join(publicDir, relativePath);
+  const relativeToPublic = path.relative(publicDir, filePath);
+
+  if (relativeToPublic.startsWith("..") || path.isAbsolute(relativeToPublic)) {
+    return null;
+  }
+
+  return filePath;
+}
+
+function getProjectScreenshotPrefix(projectSlug: string) {
+  return `/ml-screenshots/${projectSlug}/`;
+}
+
+function isProjectScreenshotPath(projectSlug: string, image: string) {
+  return image.startsWith(getProjectScreenshotPrefix(projectSlug));
+}
+
+function getSelectedPublicPath(projectSlug: string, index: number) {
+  return `/ml-screenshots/${projectSlug}/${SELECTED_SCREENSHOT_FILES[index]}`;
+}
+
+function materializeSelectedImage(
+  sourcePublicPath: string,
+  targetPublicPath: string,
+) {
+  const sourceFilePath = publicPathToFilePath(sourcePublicPath);
+  const targetFilePath = publicPathToFilePath(targetPublicPath);
+
+  if (!targetFilePath) return null;
+
+  if (sourcePublicPath === targetPublicPath) {
+    return fs.existsSync(targetFilePath) ? targetPublicPath : null;
+  }
+
+  if (sourceFilePath && fs.existsSync(sourceFilePath)) {
+    fs.mkdirSync(path.dirname(targetFilePath), { recursive: true });
+    fs.copyFileSync(sourceFilePath, targetFilePath);
+    return targetPublicPath;
+  }
+
+  // In production builds the candidate source may not exist, but the selected
+  // target files can already be committed under public/ml-screenshots.
+  return fs.existsSync(targetFilePath) ? targetPublicPath : null;
+}
+
+function createProductionFrontendImages(
+  input: CreateProductionImagesInput,
+): FrontendProjectImages {
+  const { projectSlug, cover, images } = input;
+
+  const orderedSources = Array.from(
+    new Set(
+      [cover, ...images]
+        .filter((image): image is string => typeof image === "string")
+        .map(normalizePublicPath)
+        .filter((image) => isProjectScreenshotPath(projectSlug, image)),
+    ),
+  );
+
+  const selectedImages: string[] = [];
+
+  for (const sourcePublicPath of orderedSources) {
+    if (selectedImages.length >= SELECTED_SCREENSHOT_FILES.length) break;
+
+    const targetPublicPath = getSelectedPublicPath(
+      projectSlug,
+      selectedImages.length,
+    );
+
+    const materializedPublicPath = materializeSelectedImage(
+      sourcePublicPath,
+      targetPublicPath,
+    );
+
+    if (materializedPublicPath) {
+      selectedImages.push(materializedPublicPath);
+    }
+  }
+
+  // Final fallback: use committed selected files if they exist.
+  for (
+    let index = selectedImages.length;
+    index < SELECTED_SCREENSHOT_FILES.length;
+    index += 1
+  ) {
+    const selectedPublicPath = getSelectedPublicPath(projectSlug, index);
+    const selectedFilePath = publicPathToFilePath(selectedPublicPath);
+
+    if (selectedFilePath && fs.existsSync(selectedFilePath)) {
+      selectedImages.push(selectedPublicPath);
+    }
+  }
+
+  return {
+    cover: selectedImages[0] || null,
+    images: selectedImages,
+    updatedAt: new Date().toISOString(),
+  };
 }
 
 function readFrontendImages(): Record<string, FrontendProjectImages> {
@@ -243,7 +372,8 @@ export async function POST(request: Request) {
 
   const submittedImages: string[] = body.images
     .map((image: unknown) => String(image))
-    .filter((image: string) => image.startsWith("/ml-screenshots/"));
+    .map(normalizePublicPath)
+    .filter((image: string) => isProjectScreenshotPath(projectSlug, image));
 
   if (submittedImages.length === 0) {
     return NextResponse.json(
@@ -310,13 +440,27 @@ export async function POST(request: Request) {
     images,
   });
 
-  const current = readFrontendImages();
-
-  current[projectSlug] = {
+  const productionItem = createProductionFrontendImages({
+    projectSlug,
     cover,
     images,
-    updatedAt: new Date().toISOString(),
-  };
+  });
+
+  if (productionItem.images.length === 0) {
+    return NextResponse.json(
+      {
+        ok: false,
+        code: "no-production-images",
+        message:
+          "No selected production screenshots could be created. Make sure candidate files exist locally or cover.webp / slide images are already present.",
+      },
+      { status: 422 },
+    );
+  }
+
+  const current = readFrontendImages();
+
+  current[projectSlug] = productionItem;
 
   writeFrontendImages(current);
 

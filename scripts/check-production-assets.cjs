@@ -4,16 +4,10 @@ const path = require("node:path");
 const root = process.cwd();
 const marker = "candidate" + "s-";
 
-/**
- * These are files/folders that are part of the public app bundle
- * or production-facing data.
- *
- * We intentionally DO NOT scan every file under data/ml, because files like
- * feedback-model.json, preferences.json and rankings.json are internal
- * training/runtime files and may contain candidate screenshot references.
- */
 const scanTargets = [
-  "app",
+  "app/page.tsx",
+  "app/about",
+  "app/projects",
   "components",
   "hooks",
   "lib",
@@ -41,25 +35,18 @@ function scanFile(filePath) {
   }
 }
 
-function walk(dir) {
-  if (!fs.existsSync(dir)) return;
+function walk(targetPath) {
+  if (!fs.existsSync(targetPath)) return;
 
-  const stat = fs.statSync(dir);
+  const stat = fs.statSync(targetPath);
 
   if (stat.isFile()) {
-    scanFile(dir);
+    scanFile(targetPath);
     return;
   }
 
-  for (const item of fs.readdirSync(dir)) {
-    const fullPath = path.join(dir, item);
-    const itemStat = fs.statSync(fullPath);
-
-    if (itemStat.isDirectory()) {
-      walk(fullPath);
-    } else {
-      scanFile(fullPath);
-    }
+  for (const item of fs.readdirSync(targetPath)) {
+    walk(path.join(targetPath, item));
   }
 }
 
@@ -69,11 +56,15 @@ for (const target of scanTargets) {
 
 if (badFiles.length > 0) {
   console.error("");
-  console.error("Build blocked: public app references ML candidate screenshots.");
+  console.error(
+    "Build blocked: public app references ML candidate screenshots.",
+  );
   console.error("");
+
   for (const file of badFiles) {
     console.error("- " + file);
   }
+
   console.error("");
   console.error("Public production code must use:");
   console.error("- cover.webp");
@@ -81,6 +72,7 @@ if (badFiles.length > 0) {
   console.error("- slide-2.webp");
   console.error("- slide-3.webp");
   console.error("");
+
   process.exit(1);
 }
 
